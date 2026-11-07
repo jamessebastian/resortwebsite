@@ -5,53 +5,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Cd4BN3W4P8SO6l52J-ylEwh2XWR5R5ahMJC2E7bgaM8X4On7jw1gwxLD&s=10" type="image/x-icon">
+    <title>JamesResort</title>
     <!-- Bootstrap v5.3 CSS Link here -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- fotawesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 
+    <style>
+        nav {
+            background-color: rgb(158 204 249) !important;
+        }
+    </style>
 </head>
-<!-- Add flexbox layout utilities to the body tag -->
+
 
 <body class="d-flex flex-column h-100">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="m-3  navbar-brand fs-2 fw-bold " href="#">JamesResort</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active"  href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                        <a class="nav-link" href="./About.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <a class="nav-link " href="./Rooms.html">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Adventure.html">Adventure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Contact.html">Contact</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+
             </div>
         </div>
     </nav>
@@ -83,8 +81,7 @@
 
 
 
-    <!-- Responsive Footer (Sticky) -->
-    <!-- 'mt-auto' forces the footer down if content height is short -->
+
     <footer class="bg-dark text-white pt-5 pb-3 mt-auto">
         <div class="container">
             <div class="row g-4">
@@ -93,23 +90,24 @@
                 <div class="col-md-6 col-lg-5">
                     <h5 class="text-uppercase fw-bold mb-4">Get in touch</h5>
                     <ul class="list-unstyled text-white-50 lh-lg mb-4">
-                        <li><i class="bi bi-geo-alt-fill me-2"></i>701 Old York Drive Richmond USA.</li>
+                        <li><i class="bi bi-geo-alt-fill me-2"></i>234 old road, ernakulam</li>
                         <li><i class="bi bi-telephone-fill me-2"></i>+1-202-555-0100</li>
                         <li><i class="bi bi-envelope-fill me-2"></i>demo@info.com</li>
                     </ul>
 
                     <!-- Social Icons -->
+
                     <div class="mb-4">
-                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2" aria-label="Facebook"><i
-                                class="bi bi-facebook"></i></a>
-                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2" aria-label="Twitter"><i
-                                class="bi bi-twitter-x"></i></a>
-                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2" aria-label="Instagram"><i
-                                class="bi bi-instagram"></i></a>
-                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle me-2" aria-label="LinkedIn"><i
-                                class="bi bi-linkedin"></i></a>
-                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle" aria-label="YouTube"><i
-                                class="bi bi-youtube"></i></a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle" aria-label="YouTube">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a> <a href="#" class="btn btn-outline-light btn-sm rounded-circle" aria-label="YouTube">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a> <a href="#" class="btn btn-outline-light btn-sm rounded-circle" aria-label="YouTube">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-light btn-sm rounded-circle" aria-label="YouTube">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
                     </div>
 
                     <!-- Email Input Form -->
@@ -128,26 +126,19 @@
                     <div class="row g-2">
                         <div class="col-6">
                             <ul class="list-unstyled">
-                                <li class="mb-2"><a href="#"
-                                        class="text-white-50 text-decoration-none hov-link">Home</a></li>
-                                <li class="mb-2"><a href="#"
+                                <li class="mb-2"><a href="./index.html"
+                                        class="text-white-50 text-decoration-none hov-link ">Home</a></li>
+                                <li class="mb-2"><a href="./About.html"
                                         class="text-white-50 text-decoration-none hov-link">About</a></li>
-                                <li class="mb-2"><a href="#"
+                                <li class="mb-2"><a href="./Rooms.html"
                                         class="text-white-50 text-decoration-none hov-link">Rooms</a></li>
-                                <li class="mb-2"><a href="#"
-                                        class="text-white-50 text-decoration-none hov-link">Gallery</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-6">
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><a href="#"
-                                        class="text-white-50 text-decoration-none hov-link">Dinning</a></li>
-                                <li class="mb-2"><a href="#"
-                                        class="text-white-50 text-decoration-none hov-link">News</a></li>
-                                <li class="mb-2"><a href="#"
+                                <li class="mb-2"><a href="./Adventure.html"
+                                        class="text-white-50 text-decoration-none hov-link">Adventure</a></li>
+                                <li class="mb-2"><a href="./Contact.html"
                                         class="text-white-50 text-decoration-none hov-link">Contact</a></li>
                             </ul>
                         </div>
+
                     </div>
                 </div>
 
@@ -158,18 +149,19 @@
 
             <div class="row align-items-center">
                 <div class="col text-center">
-                    <p class="text-white-50 small mb-0">&copy; 2017 All right reserved. Designed by <a href="#"
-                            class="text-white text-decoration-none fw-semibold">ThemeVault</a>.</p>
+                    <p class="text-white-50 small mb-0">&copy; 2026 All right reserved. Designed by <a href="#"
+                            class="text-white text-decoration-none fw-semibold">James</a>.</p>
                 </div>
             </div>
         </div>
     </footer>
 
 
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js"></script>
 </body>
 
 </html>
