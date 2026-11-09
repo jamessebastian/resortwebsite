@@ -6,7 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- favicon -->
-    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Cd4BN3W4P8SO6l52J-ylEwh2XWR5R5ahMJC2E7bgaM8X4On7jw1gwxLD&s=10" type="image/x-icon">
+    <link rel="shortcut icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Cd4BN3W4P8SO6l52J-ylEwh2XWR5R5ahMJC2E7bgaM8X4On7jw1gwxLD&s=10"
+        type="image/x-icon">
     <title>JamesResort</title>
     <!-- Bootstrap v5.3 CSS Link here -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,11 +20,28 @@
         nav {
             background-color: rgb(158 204 249) !important;
         }
+
+        /* Base card properties for smooth animation */
+        .hover-highlight {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        /* Hover state styling */
+        .hover-highlight:hover {
+            transform: translateY(-5px);
+            /* Lifts the card slightly */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            /* Adds a soft glow/shadow */
+            border-color: #0d6efd;
+            /* Optional: changes border to Bootstrap primary coolor */
+
+        }
     </style>
 </head>
 
 
 <body class="d-flex flex-column h-100">
+    <!-- navbar start -->
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
             <a class="m-3  navbar-brand fs-2 fw-bold " href="#">JamesResort</a>
@@ -34,7 +53,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link "  href="./index.html">Home</a>
+                        <a class="nav-link " href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " href="./About.html">About</a>
@@ -53,16 +72,224 @@
             </div>
         </div>
     </nav>
+    <!-- navbar end -->
+
+    <!-- modal 1 start -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Bungee Jumping</h1>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="height: 200px; overflow: hidden;">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXR0H24XhrNmpTScmVE2uPlGGq2tG7ZO6q111kpVFQ5a-nN0Jgq3RWhOt4&s=10"
+                            class="card-img-top" alt="...">
+                    </div>
+                    <br>
+                    <p class="card-text">Experience the thrill of jumping from a great height with a bungee cord</p>
+                    <!-- Row 1 -->
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item fw-bold w-50">PRICE</li>
+                        <li class="list-group-item w-50">120$ per head</li>
+                    </ul>
+
+                    <!-- Row 2 -->
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item fw-bold w-50">Best Time to Visit</li>
+                        <li class="list-group-item w-50">March</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal 1 end -->
+
+    <!-- modal 2 start -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Rafting</h1>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="height: 200px; overflow: hidden;">
+                        <img src="https://cdn.pixabay.com/photo/2014/03/23/19/57/rafting-293542_1280.jpg"
+                            class="card-img-top" alt="...">
+                    </div>
+                    <br>
+                    <p class="card-text">Experience the thrill of rafting down a river with your group</p>
+
+                    <!-- Row 1 -->
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item fw-bold w-50">PRICE</li>
+                        <li class="list-group-item w-50">420$ per head</li>
+                    </ul>
+
+                    <!-- Row 2 -->
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item fw-bold w-50">Best Time to Visit</li>
+                        <li class="list-group-item w-50">March</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal 2 end -->
+
+    <!-- modal 3 start -->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Paragliding</h1>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="height: 200px; overflow: hidden;">
+                        <img src="https://cdn.pixabay.com/photo/2014/03/23/19/57/rafting-293542_1280.jpg"
+                            class="card-img-top" alt="...">
+                    </div>
+                    <br>
+                    <p class="card-text">Experience the thrill of paragliding through the skies with your group</p>
+
+                    <!-- Row 1 -->
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item fw-bold w-50">PRICE</li>
+                        <li class="list-group-item w-50">600$ per head</li>
+                    </ul>
+
+                    <!-- Row 2 -->
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item fw-bold w-50">Best Time to Visit</li>
+                        <li class="list-group-item w-50">May</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal 3 end -->
 
 
 
     <!-- Main Website Content Wrapper -->
     <main class="flex-shrink-0">
 
-        <div class="container my-5">
-            <h1>Your Main Content Goes Here</h1>
-            <p>If this page has very little text, the footer will still stick perfectly to the bottom of the screen.</p>
-        </div>
+        <!-- adventure cards start -->
+        <br>
+        <br>
+        <section id="adventures">
+            <div class="container">
+                <h1 class="display-4">Popular Adventure</h1>
+                <br>
+                <div class="row">
+                    <!-- adventure 1 -->
+                    <div class="col mb-5">
+                        <div class="card hover-highlight" style="width: 18rem;">
+                            <div style="height: 200px; overflow: hidden;">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXR0H24XhrNmpTScmVE2uPlGGq2tG7ZO6q111kpVFQ5a-nN0Jgq3RWhOt4&s=10"
+                                    class="card-img-top" alt="...">
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title">Bungee Jumping</h5>
+                                <p class="card-text">Experience the thrill of jumping from a great height with a bungee
+                                    cord</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+
+                                <li class="list-group-item">Price:120$ per head</li>
+                                <li class="list-group-item">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#modal1"
+                                        class="btn btn-outline-secondary ">
+                                        View Details
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- adventure 1 -->
+
+                    <!-- adventure 2 -->
+                    <div class="col mb-5">
+                        <div class="card hover-highlight" style="width: 18rem;">
+                            <div
+                                style="height: 200px; overflow: hidden; background-position: center; background-size: cover; ">
+                                <img src="https://cdn.pixabay.com/photo/2014/03/23/19/57/rafting-293542_1280.jpg"
+                                    class="card-img-top" alt="...">
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title">Rafting</h5>
+                                <p class="card-text">Experience the thrill of rafting down scenic rivers</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+
+                                <li class="list-group-item">Price:420$ per head</li>
+                                <li class="list-group-item">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#modal2"
+                                        class="btn btn-outline-secondary ">
+                                        View Details
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- adventure 2 -->
+
+
+                    <!-- adventure 3 -->
+                    <div class="col mb-5">
+                        <div class="card hover-highlight" style="width: 18rem;">
+                            <div
+                                style="height: 200px; overflow: hidden; background-position: center; background-size: cover; ">
+                                <img src="https://media.istockphoto.com/id/958069562/photo/paragliding.jpg?s=612x612&w=0&k=20&c=PWNz5aLOAVziWVt5hl-AjMr8pMUQuygox9KL_UCwUTY="
+                                    class="card-img-top" alt="...">
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title">Paragliding</h5>
+                                <p class="card-text">Experience the thrill of soaring through the skies with a
+                                    paraglider</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+
+                                <li class="list-group-item">Price:500$ per head</li>
+                                <li class="list-group-item">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#modal3"
+                                        class="btn btn-outline-secondary ">
+                                        View Details
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- adventure 3 -->
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- adventure cards end -->
     </main>
 
 
