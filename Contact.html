@@ -23,6 +23,7 @@
 
 
 <body class="d-flex flex-column h-100">
+    <!-- navbar start -->
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
             <a class="m-3  navbar-brand fs-2 fw-bold " href="#">JamesResort</a>
@@ -53,30 +54,56 @@
             </div>
         </div>
     </nav>
-
+<!-- navbar end -->
 
 
     <!-- Main Website Content Wrapper -->
     <main class="flex-shrink-0">
 
-        <div class="container my-5">
-            <h1>Your Main Content Goes Here</h1>
-            <p>If this page has very little text, the footer will still stick perfectly to the bottom of the screen.</p>
+           <!-- Travel Enquirey Form Section start -->
+    <section id="contact">
+        <div class="container my-3">
+            <h1>Contact Us</h1>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="mb-3">
+                    <label for="Phone" class="form-label">Phone number</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Enter your Phone number">
+                </div>
+                <div class="mb-3">
+                    <label for="destination" class="form-label">Prefered Room</label>
+                    <select class="form-select" id="destination" aria-label="Preferred Destination Select">
+                        <option selected disabled value="">Choose a Room type...</option>
+                        <option value="munnar">Single room</option>
+                        <option value="goa">Double room</option>
+                        <option value="ladakh">Super room</option>
+                        <option value="hong-kong">Single AC room</option>
+
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="travelers" class="form-label">number of person</label>
+                    <input type="text" class="form-control" id="travelers" placeholder="Enter number of travelers">
+                </div>
+                <div class="mb-3">
+                   <label for="exampleFormControlTextarea1" class="form-label">Any Message</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
+    </section>
+    <br>
+    <br><br>
+    <!-- Travel Enquirey Form Section end -->
     </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
