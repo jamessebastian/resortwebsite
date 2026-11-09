@@ -15,62 +15,8 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- fotawesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+ <link rel="stylesheet" href="./style.css">
 
-    <style>
-        nav {
-            background-color: rgb(158 204 249) !important;
-        }
-
-        /* Minimal custom CSS to match specific styles from the image */
-        .icon-circle {
-            width: 100px;
-            height: 100px;
-            background-color: #e0e0e0;
-            border-radius: 50%;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .icon-circle i {
-            font-size: 2.2rem;
-            color: #000000;
-        }
-
-        .amenity-text {
-            font-size: 0.85rem;
-            font-weight: 500;
-            letter-spacing: 1px;
-            color: #333333;
-        }
-
-
-        /* Container styles */
-        .hover-overlay-container {
-            cursor: pointer;
-        }
-
-
-        /* 1. Setup the overlay layer (Hidden by default using opacity: 0) */
-        .hover-overlay-container .overlay-link {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.6);
-            /* Light transparent dark shadow */
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-            /* Smooth fade-in effect */
-            z-index: 2;
-        }
-
-        /* 2. Show the overlay when hovering over the container */
-        .hover-overlay-container:hover .overlay-link {
-            opacity: 1;
-        }
-    </style>
 </head>
 
 
